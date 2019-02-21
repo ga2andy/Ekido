@@ -16,8 +16,8 @@
         margin:0;
         padding:0;
         }
-        li {
-        background-color:#999;
+        li2 {
+        background-color:#174005;
         border-bottom-color:#F90;
         border-bottom-style:solid;
         border-bottom-width:.1em;
@@ -25,34 +25,50 @@
         border-right-style:solid;
         border-right-width:thick;
         float:left;
-        padding:.5em;
+        padding:.8em;
         position:relative;
-        width:13em;
+        width:15em;
         }
-        li a {
-        color:#FFF;
+        li2 a {
+        color:#edbe00;
         text-decoration:none;
         }
-        li ul {
+        li2 ul {
         display:none;
         left:0;
         position:absolute;
         top:2.3em;
         }
-        li ul a:hover {
+        li2 ul a:hover {
         border-bottom-style:solid;
         border-bottom-width:thin;
-        border-left-color:#FC0;
-        color:#FC6;
+        border-left-color:#ff5100;
+        color:#ff5100;
         }
-        li:hover ul {
+        li2:hover ul {
         display:block;
+        }
+
+        .container {
+		background-color: #FFFFFF;
+		padding: 10px 15px 10px 20px;
+		border: 2px solid darkgrey;
+		border-radius: 7px;
+		font-family: "Calibri", serif;
+		font-size: 17px;
+		}
+
+        .navbar {
+        background-color: #fff;
+        margin-bottom: 10px;
+        width: 100%;
+        height: 50px;
         }
     </style>
 </head>
 <body style="background-color:#FFFFFF !important">      
     <!-- crousel mi den bilder --> 
-        <div class="bd-example">
+    <div class="bd-example">
         <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
             <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
@@ -92,41 +108,43 @@
         </a>
         </div>
     </div>
-    <!-- nagivations menu -->
+    <!-- nagivations menu
     <nav class="nav nav-pills nav-justified">
         <a class="nav-item nav-link active" href="#">Active</a>
         <a class="nav-item nav-link" href="#">Much longer nav link</a>
         <a class="nav-item nav-link" href="#">Link</a>
         <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-    </nav><br>
-    <ul>
-        <li><a href="#">Über uns</a>
+    </nav><br>-->
+    <img src="Ekido-Logo.png">
+    <nav class="navbar"><ul>
+        <li2><a href="#">Über uns</a>
         <ul>
-            <li><a href="index.html" active>Home</a></li>
-            <li><a href="about.html">Über uns</a></li>
+            <li2><a href="index.html" active>Home</a></li2>
+            <li2><a href="test.html">Test</a></li2>
         </ul>
-        </li>
-        <li><a href="#">Räumlichkeiten</a>
+        </li2>
+        <li2><a href="#">Räumlichkeiten</a>
         <ul>
-            <li><a href="buecher.html">Küche</a></li>
-            <li><a href="zeitschr.html">Schlafzimmer</a></li>
-            <li><a href="software.html">Bad</a></li>
-            <li><a href="software.html">Garten</a></li>
-            <li><a href="software.html">Wohnzimmer</a></li>
-            <li><a href="software.html">Büro</a></li>
-            <li><a href="software.html">Hobbyraum</a></li>
-            <li><a href="software.html">Esszimmer</a></li>
-            <li><a href="software.html">Flur</a></li>
-            <li><a href="software.html">Waschküche</a></li>
+            <li2><a href="buecher.html">Küche</a></li2>
+            <li2><a href="zeitschr.html">Schlafzimmer</a></li2>
+            <li2><a href="software.html">Bad</a></li2>
+            <li2><a href="software.html">Garten</a></li2>
+            <li2><a href="software.html">Wohnzimmer</a></li2>
+            <li2><a href="software.html">Büro</a></li2>
+            <li2><a href="software.html">Hobbyraum</a></li2>
+            <li2><a href="software.html">Esszimmer</a></li2>
+            <li2><a href="software.html">Flur</a></li2>
+            <li2><a href="software.html">Waschküche</a></li2>
         </ul>
-        </li>
-        <li><a href="#">Kontakt</a>
+        </li2>
+        <li2><a href="#">Kontakt</a>
         <ul>
-            <li><a href="beratung.html">Beratung</a></li>
-            <li><a href="vertrieb.html">Vertrieb</a></li>
+            <li2><a href="beratung.html">Beratung</a></li2>
+            <li2><a href="vertrieb.html">Vertrieb</a></li2>
         </ul>
-        </li>
-    </ul>
+        </li2>
+    </ul></nav>
+
     <div class="container">
         <div class="form-group">
             <h1>Test Home</h1>
