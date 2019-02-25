@@ -10,21 +10,14 @@ padding: 30px;
 text-align: center;
 }
 
-#navbar {
-overflow: hidden;
-background-color: #333;
+#navbar {overflow: hidden;
+/* background-color: #333; */
 margin-bottom: 20px;
+z-index: 100;
+position: absolute;
 }
 
-#navbar a {
-float: left;
-display: block;
-color: #f9f9f9;
-text-align: center;
-padding: 14px 16px;
-text-decoration: none;
-font-size: 17px;
-}
+#navbar a {float: left;color: #f9f9f9;text-align: center;padding: 14px 16px;text-decoration: none;font-size: 17px;background-color: #333;}
 
 #navbar a:hover {
 background-color: #ff781e;
@@ -42,7 +35,7 @@ padding: 16px;
 }
 
 .sticky {
-position: fixed;
+position: fixed !important;
 top: 0;
 width: 100%;
 }
@@ -69,36 +62,23 @@ text-decoration: none;
 }
 
 /* The dropdown container */
-.dropdown {
-float: left;
-overflow: hidden;
-}
+.dropdown {float: left;overflow: hidden;}
 
 /* Dropdown button */
-.dropdown .dropbtn {
-font-size: 16px; 
-border: none;
-outline: none;
-color: white;
-padding: 14px 16px;
-background-color: inherit;
-font-family: inherit; /* Important for vertical align on mobile phones */
-margin: 0; /* Important for vertical align on mobile phones */
-}
+.dropdown .dropbtn {font-size: 16px;border: none;outline: none;color: white;padding: 14px 16px;background-color: inherit;font-family: inherit; /* Important for vertical align on mobile phones */margin: 0; /* Important for vertical align on mobile phones */float: left;background-color: #333;height: 100%;}
 
 /* Add a red background color to navbar links on hover */
-.navbar a:hover, .dropdown:hover .dropbtn {
+.navbar a:hover, .dropbtn:hover {
 background-color: #ff781e;
 }
 
 /* Dropdown content (hidden by default) */
 .dropdown-content {
 display: none;
-position: absolute;
+position: relative;
 background-color: #333;
-min-width: 160px;
 box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-z-index: 1;
+z-index: 1; 
 }
 
 /* Links inside the dropdown */
@@ -117,19 +97,95 @@ background-color: #ddd;
 }
 
 /* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
-display: block;
+.dropbtn:hover .dropdown-content {
+display: grid;
 }
 
-.container 
-{
+.container {
 background-color: #FFFFFF;
-padding: 10px 25px 10px 25px;
+
 border: 2px solid darkgrey;
 border-radius: 7px;
 font-family: "Calibri", serif;
 font-size: 20px;
 text-align: justify;
-margin-right: 170px;
-margin-left: 170px;
+margin: 60px auto;
+width:98%;
+position: relative;
+}
+
+/* Height of picture within the carousel-slide */
+.carousel-inner {
+height: 262px;
+}
+
+
+
+
+.skyblue {
+background-color: #22c8ff;
+}
+
+.carousel-indicators {
+bottom: 0;
+}
+.carousel-control.right,
+.carousel-control.left {
+background-image: none;
+}
+.carousel-item {
+min-height: 350px; 
+height: 100%;
+width:100%; 
+}
+.carousel-caption h3,
+.carousel .icon-container,
+.carousel-caption button {
+background-color: #09c;
+}
+.carousel-caption h3 {
+padding: .5em;
+}
+.carousel .icon-container {
+display: inline-block;
+font-size: 25px;
+line-height: 25px;
+padding: 1em;
+text-align: center;
+border-radius: 50%;
+}
+.carousel-caption button {
+border-color: #00bfff;
+margin-top: 1em; 
+}
+
+/* Animation delays */
+.carousel-caption h3:first-child {
+animation-delay: 1s;
+}
+.carousel-caption h3:nth-child(2) {
+animation-delay: 2s;
+}
+.carousel-caption button {
+animation-delay: 3s;
+}
+
+h1 {
+text-align: center;  
+margin-bottom: 30px;
+font-size: 30px;
+font-weight: bold;
+}
+
+.p {
+padding-top: 125px;
+text-align: center;
+}
+
+.p a {
+text-decoration: underline;
+}
+
+label {
+margin: 14.5px 16px;
 }
