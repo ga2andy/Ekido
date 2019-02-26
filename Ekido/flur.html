@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        .carousel {
+        height: auto;
+        width: 100%;
+        }
+
+        .container {
+        background-color: #E7E7E7;
+        border: 1px solid darkgrey;
+        font-family: "Calibri", serif;
+        font-size: 20px;
+        text-align: justify;
+        margin: 60px auto;
+        padding: 18px;
+        width: 100%;
+        position: relative;
+        }
+    </style>
+</head>
+<body>
+    <div class="bd-example">
+        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+            </ol>
+            <!-- IMPORTANT: Picture size has to be 331px height -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                <a href="bad.html"><img src="badezimmer.jpg" class="img-responsive w-100" alt="..."></a>
+                </div>
+                <div class="carousel-item">
+                <a href="schlafzimmer.html"><img src="schlafzimmer.jpg" class="d-block w-100" alt="..."></a>
+                </div>
+                <div class="carousel-item">
+                <a href="kueche.html"><img src="kueche.jpg" class="d-block w-100" alt="..."></a>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+
+    <div id="navbar">
+        <a href="index.html">Home</a>
+        <a href="ueber_uns.html">Über uns</a>
+            <div class="dropdown">
+                <div class="dropbtn" style="padding:0 0;">
+                    <label>Räumlichkeiten</label>
+                    <div class="dropdown-content">
+                        <a href="kueche.html">Küche</a>
+                        <a href="schlafzimmer.html">Schlafzimmer</a>
+                        <a href="bad.html">Bad</a>
+                        <a href="garten.html">Garten</a>
+                        <a href="wohnzimmer.html">Wohnzimmer</a>
+                        <a href="buero.html">Büro</a>
+                        <a href="hobbyraum.html">Hobbyraum</a>
+                        <a href="esszimmer.html">Esszimmer</a>
+                        <a class="active" href="flur.html">Flur</a>
+                        <a href="waschkueche.html">Waschküche</a>
+                    </div>
+                </div>
+            </div>
+        <a href="contacts.html">Kontakte</a>
+        <a href="impressum.html">Impressum</a>
+    </div>
+
+    <div class="container">
+        <h3>Flur</h3>
+        <p>
+            Ein leerer Flur ist ein schlechter Flur. Also schauen Sie in unsere Flurausstattung rein 
+            und finden Sie: Schränke, Dekorationen, Kleiderständer/haken, Schuhablagen, um ihren Flurbereich aufzuhübschen.
+        </p>
+        <p><img src="Bilder/Flur 2.jpg" width=80% length=80%></p>
+        <p><img src="Bilder/Flur 3.jpg" width=80% length=80%></p>
+    </div>
+
+    <script type="text/javascript" src="./scroll.js"></script>
+    <script type="text/javascript" src="./slideshow.js"></script>
+</body>
+</html>

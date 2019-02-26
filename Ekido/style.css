@@ -1,0 +1,117 @@
+body {
+margin: 0;
+font-size: 28px;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+background-color: #E7E7E7;
+padding: 30px;
+text-align: center;
+}
+
+#navbar {overflow: hidden;
+/* background-color: #333; */
+margin-bottom: 20px;
+z-index: 100;
+position: absolute;
+}
+
+#navbar a {float: left;color: #f9f9f9;text-align: center;padding: 14px 16px;text-decoration: none;font-size: 17px;background-color: #333;}
+
+#navbar a:hover {
+background-color: #ff781e;
+color: #f9f9f9;
+}
+
+#navbar a.active {
+background-color: #2a7509
+;
+color: white;
+}
+
+.content {
+padding: 16px;
+}
+
+.sticky {
+position: fixed !important;
+top: 0;
+width: 100%;
+}
+
+.sticky + .content {
+padding-top: 60px;
+}
+
+/* The dropdown container */
+.dropdown {float: left;overflow: hidden;}
+
+/* Dropdown button */
+.dropdown .dropbtn {font-size: 16px;border: none;outline: none;color: white;padding: 14px 16px;background-color: inherit;font-family: inherit; /* Important for vertical align on mobile phones */margin: 0; /* Important for vertical align on mobile phones */float: left;background-color: #333;height: 100%;}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropbtn:hover {
+background-color: #ff781e;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+display: none;
+position: relative;
+background-color: #333;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1; 
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+float: none;
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropbtn:hover .dropdown-content {
+display: grid;
+}
+
+.container {
+background-color: #E7E7E7;
+border: 2px solid darkgrey;
+border-radius: 7px;
+font-family: "Calibri", serif;
+font-size: 20px;
+text-align: justify;
+margin: 60px auto;
+width: 100%;
+position: relative;
+}
+
+h1 {
+text-align: center;  
+margin-bottom: 30px;
+font-size: 30px;
+font-weight: bold;
+}
+
+.p {
+padding-top: 125px;
+text-align: center;
+}
+
+.p a {
+text-decoration: underline;
+}
+
+label {
+margin: 14.5px 16px;
+}

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        .carousel {
+        height: auto;
+        width: 100%;
+        }
+
+        .container {
+        background-color: #E7E7E7;
+        border: 1px solid darkgrey;
+        font-family: "Calibri", serif;
+        font-size: 20px;
+        text-align: justify;
+        margin: 60px auto;
+        padding: 18px;
+        width: 100%;
+        position: relative;
+        }
+    </style>
+</head>
+<body>
+    <div class="bd-example">
+        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+            </ol>
+            <!-- IMPORTANT: Picture size has to be 331px height -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                <a href="bad.html"><img src="badezimmer.jpg" class="img-responsive w-100" alt="..."></a>
+                </div>
+                <div class="carousel-item">
+                <a href="schlafzimmer.html"><img src="schlafzimmer.jpg" class="d-block w-100" alt="..."></a>
+                </div>
+                <div class="carousel-item">
+                <a href="kueche.html"><img src="kueche.jpg" class="d-block w-100" alt="..."></a>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+
+    <div id="navbar">
+        <a href="index.html">Home</a>
+        <a href="ueber_uns.html">Über uns</a>
+            <div class="dropdown">
+                <div class="dropbtn" style="padding:0 0;">
+                    <label>Räumlichkeiten</label>
+                    <div class="dropdown-content">
+                        <a href="kueche.html">Küche</a>
+                        <a href="schlafzimmer.html">Schlafzimmer</a>
+                        <a href="bad.html">Bad</a>
+                        <a href="garten.html">Garten</a>
+                        <a href="wohnzimmer.html">Wohnzimmer</a>
+                        <a href="buero.html">Büro</a>
+                        <a href="hobbyraum.html">Hobbyraum</a>
+                        <a href="esszimmer.html">Esszimmer</a>
+                        <a href="flur.html">Flur</a>
+                        <a href="waschkueche.html">Waschküche</a>
+                    </div>
+                </div>
+            </div>
+        <a class="active" href="contacts.html">Kontakte</a>
+        <a href="impressum.html">Impressum</a>
+    </div>
+
+    <div class="container">
+
+    <table align="right" cellspacing="10" cellpadding="20">
+        <tr>
+            <th><h3>Anfahrt</h3></th>
+            <th><h3>Kontakte</h3></th>
+        </tr>
+        <tr>
+            <td><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2243.7214990227026!2d7.686867969018262!3d47.52767571086617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4791b640506bbd49%3A0xe86e5112e38710a9!2sIKEA+Pratteln!5e0!3m2!1sde!2sch!4v1551169651431" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></td>
+            <td style="vertical-align: top;"><p><b>Andreas Geiger</b></br>
+                Ekido-Verkaufsberater</br>
+                Kundenbetreuung</br>
+                Tel. +41 61 823 45 32</br>
+                Fax +41 61 823 45 33</br>
+                andreas.geiger@ekido.ch</p></td>
+        
+            <td style="vertical-align: top;"><p><b>Jeremy Gilgen</b></br>
+                Ekido-Verkaufsberater</br>
+                Kundenbetreuung</br>
+                Tel. +41 61 823 23 34</br>
+                Fax +41 61 823 23 35</br>
+                jeremy.gilgen@ekido.ch</p></td>
+        </tr>
+    </table>
+    <p><b>Öffnungszeiten</b></br>
+    Montag bis Freitag 08.00 - 18.00 Uhr</br>
+    Samstag 10.00 - 17.00 Uhr</br>
+    Sonntag 10.00 - 16.00 Uhr</p>
+    
+    <p><a href="Kontaktformular/kontakt.php">Hier gehts zum Kontaktformular</a></p>
+    </div>
+
+    <script type="text/javascript" src="./scroll.js"></script>
+    <script type="text/javascript" src="./slideshow.js"></script>
+</body>
+</html>
